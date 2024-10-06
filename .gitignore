@@ -1,0 +1,4 @@
+.env
+__pycache__
+data_collection/cleaned_data
+data_collection/raw_data
