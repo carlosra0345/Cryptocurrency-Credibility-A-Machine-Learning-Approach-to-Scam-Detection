@@ -1,8 +1,9 @@
-# utils.py
-# Houses heper functions that are shared acorss data collection scripts
-
 import os
 import json
+
+def check_directory_file_exists(path: str, error_message : str) -> None:
+    if not os.path.exists(path):
+        raise FileNotFoundError(f'Error 404 - Not Found: {error_message}')
 
 def save_data(data, path):
     with open(path, "w") as f:
